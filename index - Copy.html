@@ -4,7 +4,33 @@
     <title>CSS Template</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
- 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideDown(5000);
+            });
+            $("#stop").click(function () {
+                $("#panel").stop();
+            });
+        });
+    </script>
+    <style>
+        #panel, #flip {
+            padding: 5px;
+            font-size: 18px;
+            text-align: center;
+            background-color: #555;
+            color: white;
+            border: solid 1px #666;
+            border-radius: 3px;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
     <link href="Content/StyleSheet2.css" rel="stylesheet" />
 </head>
 <body>
@@ -15,8 +41,21 @@
     <header>
         <h1>
             "Technological Reviews"
-          
-          
+
+            <button type="button" onclick="myFunction2()">Normal Font Size</button>
+
+            <script>
+                function myFunction2() {
+                    document.getElementById("demo").style.fontSize = "100%";
+                }
+            </script>
+            <button type="button" onclick="myFunction3()">Large Font Size</button>
+
+            <script>
+                function myFunction3() {
+                    document.getElementById("demo").style.fontSize = "xx-large";
+                }
+            </script>
 
         </h1>
        
@@ -40,26 +79,31 @@
                     </div>
 
                 </nav>
-                <select onchange="myFunction(this);" size="12">
-                    <option>xx-small</option>
-                    <option>x-small</option>
-                    <option>small</option>
-                    <option>medium</option>
-                    <option>large</option>
-                    <option>x-large</option>
-                    <option>xx-large</option>
-                    <option>100%</option>
-                    <option>250%</option>
-                    <option>2cm</option>
-                    <option>100px</option>
-                </select>
-
-                <script>
+  
+                <div id="flip">Click to slide down panel and Select font size to your preference</div>
+                <div id="panel">
+                    <select onchange="myFunction(this);" size="12">
+                        <option>xx-small</option>
+                        <option>x-small</option>
+                        <option>small</option>
+                        <option>medium</option>
+                        <option>large</option>
+                        <option>x-large</option>
+                        <option>xx-large</option>
+                        <option>100%</option>
+                        <option>250%</option>
+                        <option>2cm</option>
+                        <option>100px</option>
+                    </select>
+                </div>
+               
+               <script>
                     function myFunction(selectTag) {
                         var listValue = selectTag.options[selectTag.selectedIndex].text;
                         document.getElementById("demo").style.fontSize = listValue;
                     }
                 </script>
+
                 <h2>extra content</h2>
                 <div><iframe src="http://feeds.bbci.co.uk/news/technology/rss.xml" height="600" width="214"> </iframe></div>
 
