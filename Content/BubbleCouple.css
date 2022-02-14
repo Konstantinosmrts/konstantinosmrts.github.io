@@ -1,0 +1,62 @@
+﻿body {
+    font: Montserrat, sans-serif;
+ 
+    color: #f5f6f7;
+}
+fb-page{
+    height:auto;
+    width:100%;
+}
+p {
+    font-size: 16px;
+}
+
+.margin {
+    margin-bottom: 45px;
+}
+
+.bg-1 {
+    background-image: url('59485162_607661826406127_7379847815712735232_n.jpg');
+    color: black;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.bg-2 {
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+}
+
+.bg-3 {
+    background-color: #ffffff; /* White */
+    color: #555555;
+}
+
+.bg-4 {
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.navbar {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    letter-spacing: 3px;
+    background:gold;
+    
+}
+
+.navbar-nav li a:hover {
+    color: darkgoldenrod !important;
+
+    font-size:x-large;
+    font-weight:bolder;
+}
