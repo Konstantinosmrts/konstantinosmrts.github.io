@@ -17,12 +17,29 @@
     background-position: center;
     background-size: 100%;
 }
+.navbar {
+    border-color: #ae142a;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    color: blue;
+    border-radius:12px;
+    border-block:ridge;
+    background-color: #ae142a;
+    padding: 6px 12px !important;
+    margin:auto;
+}
+
+article{
+    padding:15px;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: whitesmoke;
-    max-width: auto;
-    margin: auto;
+    max-width: 1600px;
     padding:5px;
+    margin: auto;
+  
  
 }
 address {
@@ -40,21 +57,16 @@ section::after {
 
 /* Style the footer */
 footer {
-    background-color:darkslategrey;
- 
+    background-color:orangered;
+    border:ridge;
+    border-radius:12px;
+    display:block;
     text-align: center;
     color: white;
     position: center;
+    height:100px;
    
 }
-
-.navbar {
-    height: auto;
-    
-    
-}
-
-
 h1 {
     font-size: xx-large;
 }
@@ -66,18 +78,43 @@ h2 {
 h3 {
     font-size: large;
 }
-
+.responsive {
+    width: 100%;
+    height: auto;
+}
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
+    background-color:skyblue;
+    color: black;
+    padding: 5px;
     font-size: 16px;
-    border: none;
+    border:ridge;
+    border-radius: 8px;
+    
+
+
    
 }
+#myBtn {
+    display:block; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
 
+    #myBtn:hover {
+        background-color: #555; /* Add a dark-grey background on hover */
+    }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
@@ -87,6 +124,7 @@ h3 {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    padding:5px;
 }
 
     /* Links inside the dropdown */
@@ -109,7 +147,8 @@ h3 {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: navy;
+    color:yellow;
 }
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
