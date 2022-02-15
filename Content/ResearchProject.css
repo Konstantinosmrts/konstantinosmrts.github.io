@@ -81,11 +81,7 @@ img {
     border: ridge;
     border-color: white;
 }
-iframe {
-    border-radius: 16px;
-    border:ridge;
-    border-color:white;
-}
+
 iframe:focus {
     outline: none;
 } 
