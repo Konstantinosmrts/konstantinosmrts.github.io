@@ -4,10 +4,8 @@
     box-sizing: border-box;
 }
 .jumbotron {
-    border-start-start-radius: 16px;
-    border-start-end-radius: 16px;
-    border: ridge;
-    border-color: white;
+   
+    
     font-weight: bolder;
     font-size: xx-large;
     background-color: red;
@@ -36,10 +34,9 @@
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: bold;
-    font-size: large; 
-    border-end-start-radius: 16px;
-    border-end-end-radius: 16px;
-   
+    font-size: large;
+    font-weight: bold;
+    max-width: auto;
     border-block: ridge;
     background-color: #ae142a;
     padding: 6px 12px !important;
@@ -58,7 +55,7 @@ a.nav-item.nav-link {
 a.navbar-brand {
     font-size: x-large;
     color: white !important;
-    font-weight: bold;
+   
 }
 
     article {
@@ -72,8 +69,7 @@ body {
     width:auto;
     margin:auto;
 
-   border:ridge;
-   border-radius:16px;
+ 
 
     margin: auto;
   
@@ -111,7 +107,7 @@ footer {
     background-color:darkslategrey;
     border-color:palevioletred;
     border:ridge;
-    border-radius:16px;
+    
     display:block;
     text-align: center;
     color: white;
@@ -150,9 +146,9 @@ h3 {
 
    
 }
-.col-sm-4{
-   color:black;
-
+.col-sm-4 {
+    color: black;
+    
 }
 #myBtn {
     display: block; /* Hidden by default */
